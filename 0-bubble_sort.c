@@ -19,9 +19,13 @@ void bubble_sort(int *array, size_t size)
 			array[index + 1] = swap;
 			is_swap = true;
 			index++;
+			print_array(array, size);
 		}
-		else if ((index = size - 1) && !is_swap)
+		else if (index < size - 1)
+			index++;
+		else if ((index >= size - 1) && !is_swap)
 			break;
-		index++;
+		else if (index >= size - 1)
+			index = 0;
 	}
 }
