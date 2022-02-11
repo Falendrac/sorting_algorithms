@@ -10,7 +10,7 @@ We see how to do Big O and do better algorithm's
 * How to select the best sorting algorithm for a given input
 * What is a stable sorting algorithm
 
-### Resources
+## Resources
 
 * (Sorting algorithm)[https://en.wikipedia.org/wiki/Sorting_algorithm]
 * (Big O notation)[https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation]
