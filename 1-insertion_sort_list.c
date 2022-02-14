@@ -10,26 +10,22 @@
  */
 void insertion_swap(listint_t **list, listint_t *current)
 {
-	listint_t *swap;
+	listint_t *currentNext;
 
-	swap = current;
-	current = current->next;
-	if (swap == *list)
-		*list = current;
+	currentNext = current->next;
+
+	if (!current->prev)
+		*list = currentNext;
 	else
-		swap->prev->next = current;
+		current->prev->next = currentNext;
 
-	if (current->next)
-	{
-		current->next->prev = swap;
-		swap->next = current->next;
-	}
-	else
-		swap->next = NULL;
+	if (currentNext->next)
+		currentNext->next->prev = current;
 
-	current->prev = swap->prev;
-	swap->prev = current;
-	current->next = swap;
+	currentNext->prev = current->prev;
+	current->prev = currentNext;
+	current->next = currentNext->next;
+	currentNext->next = current;
 }
 
 /**
