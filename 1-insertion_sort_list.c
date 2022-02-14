@@ -33,7 +33,6 @@ void insertion_swap(listint_t **list, listint_t *current)
  */
 void insertion_sort_list(listint_t **list)
 {
-	bool is_swap;
 	listint_t *current = *list;
 
 	if (!list || !*list)
@@ -41,17 +40,12 @@ void insertion_sort_list(listint_t **list)
 
 	while (1)
 	{
-		if (current == *list)
-			is_swap = false;
-
 		if (current->next && current->n > current->next->n)
 		{
 			insertion_swap(list, current);
-			is_swap = true;
 			print_list(*list);
-		}
-		else if (is_swap)
 			current = *list;
+		}
 		else if (current->next)
 			current = current->next;
 		else
