@@ -1,5 +1,6 @@
 #include "sort.h"
 #include <stdio.h>
+#include <stdbool.h>
 
 /**
  * bubble_sort - Sort an array with the bubble sort algorithm
@@ -15,17 +16,16 @@ void bubble_sort(int *array, size_t size)
 
 	if (!array || size < 2)
 		return;
-
 	while (1)
 	{
 		if (index == 0)
-			is_swap = FALSE;
+			is_swap = false;
 		if (index < size - 1 && array[index] > array[index + 1])
 		{
 			swap = array[index];
 			array[index] = array[index + 1];
 			array[index + 1] = swap;
-			is_swap = TRUE;
+			is_swap = true;
 			index++;
 			print_array(array, size);
 		}
