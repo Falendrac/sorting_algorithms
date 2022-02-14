@@ -1,5 +1,4 @@
 #include "sort.h"
-#include <stdbool.h>
 #include <stdio.h>
 
 /**
@@ -14,16 +13,19 @@ void bubble_sort(int *array, size_t size)
 	int swap = 0;
 	int is_swap;
 
+	if (!array || size < 2)
+		return;
+
 	while (1)
 	{
 		if (index == 0)
-			is_swap = false;
+			is_swap = FALSE;
 		if (index < size - 1 && array[index] > array[index + 1])
 		{
 			swap = array[index];
 			array[index] = array[index + 1];
 			array[index + 1] = swap;
-			is_swap = true;
+			is_swap = TRUE;
 			index++;
 			print_array(array, size);
 		}
