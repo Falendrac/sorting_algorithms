@@ -12,6 +12,9 @@ void selection_sort(int *array, size_t size)
 	size_t loopSort, searchMini, index;
 	int swap, mini;
 
+	if (!array || size < 2)
+		return;
+
 	for (loopSort = 0; loopSort < size - 1; loopSort++)
 	{
 		index = loopSort;
