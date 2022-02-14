@@ -18,11 +18,17 @@ void insertion_swap(listint_t **list, listint_t *current)
 		*list = current;
 	else
 		swap->prev->next = current;
+
 	if (current->next)
+	{
 		current->next->prev = swap;
+		swap->next = current->next;
+	}
+	else
+		swap->next = NULL;
+
 	current->prev = swap->prev;
 	swap->prev = current;
-	swap->next = current->next;
 	current->next = swap;
 }
 
