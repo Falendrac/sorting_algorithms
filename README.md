@@ -12,7 +12,7 @@ We see how to do Big O and do better algorithm's
 
 ## Resources
 
-* [Sorting algorithm][https://en.wikipedia.org/wiki/Sorting_algorithm)
+* [Sorting algorithm](https://en.wikipedia.org/wiki/Sorting_algorithm)
 * [Big O notation](https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation)
 * [Sorting algorithms animations](https://www.toptal.com/developers/sorting-algorithms)
 * [15 sorting algorithms in 6 minutes](https://www.youtube.com/watch?v=kPRA0W1kECg)
