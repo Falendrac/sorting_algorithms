@@ -30,6 +30,7 @@ void quick_sort(int *array, size_t size);
 
 /* Advanced functions */
 void shell_sort(int *array, size_t size);
+void cocktail_sort_list(listint_t **list);
 
 /* Function for insertion sort */
 void insertion_swap(listint_t **list, listint_t *current);
@@ -38,5 +39,9 @@ void insertion_swap(listint_t **list, listint_t *current);
 void swap(int *array, size_t size, ssize_t i, ssize_t j);
 size_t lomuto(int *array, size_t size, ssize_t lower, ssize_t high);
 void my_quicksort(int *array, size_t size, ssize_t lower, ssize_t high);
+
+/* Function for cocktail sort */
+void swap_cocktail(listint_t **list, listint_t *swapNode);
+int length_list(listint_t **list);
 
 #endif
