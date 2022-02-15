@@ -35,10 +35,12 @@ void insertion_swap(listint_t **list, listint_t *current)
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *current = *list;
+	listint_t *current = NULL;
 
 	if (!list || *list == NULL)
 		return;
+
+	current = *list;
 
 	while (current)
 	{
