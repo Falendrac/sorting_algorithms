@@ -28,8 +28,13 @@ void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 
+/* Advanced functions */
+void shell_sort(int *array, size_t size);
+
+/* Function for insertion sort */
 void insertion_swap(listint_t **list, listint_t *current);
 
+/* Function for quick sort */
 void swap(int *array, size_t size, ssize_t i, ssize_t j);
 size_t lomuto(int *array, size_t size, ssize_t lower, ssize_t high);
 void my_quicksort(int *array, size_t size, ssize_t lower, ssize_t high);
